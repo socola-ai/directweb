@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,"Segoe UI",sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:#11151d;
+    color:#f4f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+}
+
+/* Background */
+
+.background-glow{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at 20% 20%,rgba(0,255,255,.08),transparent 40%),
+    radial-gradient(circle at 80% 70%,rgba(0,180,255,.08),transparent 45%),
+    linear-gradient(180deg,#11151d,#171d28,#1b2230);
+
+    z-index:-2;
+}
+
+/* Card */
+
+.loading-card{
+
+    width:430px;
+    max-width:92vw;
+
+    background:#1a1f2b;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:22px;
+
+    padding:42px;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45),
+    0 0 25px rgba(0,255,255,.05);
+
+    text-align:center;
+}
+
+.logo{
+
+    display:flex;
+    justify-content:center;
+    margin-bottom:18px;
+
+}
+
+.logo-circle{
+
+    width:82px;
+    height:82px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(135deg,#00d4ff,#00ffd5);
+
+    box-shadow:
+    0 0 30px rgba(0,255,255,.35);
+
+}
+
+.subtitle{
+
+    color:#8fa6bb;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+
+}
+
+h1{
+
+    font-size:28px;
+
+    margin-bottom:14px;
+
+    color:#ffffff;
+
+}
+
+#status{
+
+    color:#a7b8c8;
+
+    margin-bottom:28px;
+
+    font-size:15px;
+
+}
+
+/* Progress */
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#11151d;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.04);
+
+}
+
+#progressBar{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:
+    linear-gradient(90deg,
+    #00d4ff,
+    #00ffd5);
+
+    box-shadow:
+    0 0 15px rgba(0,255,255,.5);
+
+}
+
+/* Bottom */
+
+.bottom{
+
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#b7c5d2;
+
+    font-size:14px;
+
+}
+
+/* Footer */
+
+footer{
+
+    position:absolute;
+
+    bottom:25px;
+
+    color:#6f8296;
+
+    font-size:13px;
+
+    letter-spacing:.5px;
+
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.loading-card{
+
+    padding:30px;
+
+}
+
+h1{
+
+    font-size:22px;
+
+}
+
+.logo-circle{
+
+    width:70px;
+    height:70px;
+
+}
+
+}
