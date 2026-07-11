@@ -42,7 +42,7 @@ footer{
 
     filter:blur(4px);
 
-    animation:shine 1.5s linear infinite;
+    animation:shine 1.4s linear infinite;
 
 }
 
@@ -107,7 +107,7 @@ footer{
     50%{
 
         box-shadow:
-        0 0 35px rgba(0,255,255,.55);
+        0 0 38px rgba(0,255,255,.55);
 
     }
 
@@ -117,6 +117,66 @@ footer{
 
     }
 
+}
+
+@keyframes seaCrash{
+    0%{
+        transform:translateY(-50%) translateX(0) scaleX(0.95) scaleY(1);
+        opacity:.92;
+    }
+    18%{
+        transform:translateY(-56%) translateX(-3px) scaleX(1.08) scaleY(.92);
+        opacity:1;
+    }
+    40%{
+        transform:translateY(-48%) translateX(0) scaleX(.96) scaleY(1.04);
+        opacity:.97;
+    }
+    60%{
+        transform:translateY(-54%) translateX(2px) scaleX(1.06) scaleY(.93);
+        opacity:1;
+    }
+    80%{
+        transform:translateY(-49%) translateX(-1px) scaleX(1.0) scaleY(1.0);
+        opacity:.98;
+    }
+    100%{
+        transform:translateY(-50%) translateX(0) scaleX(0.95) scaleY(1);
+        opacity:.92;
+    }
+}
+
+@keyframes foamRise{
+    0%{
+        transform:translate(-50%,0) scale(0.7);
+        opacity:.8;
+        filter:blur(0px);
+    }
+    15%{
+        transform:translate(-50%,-4px) scale(1.05);
+        opacity:1;
+        filter:blur(0px);
+    }
+    35%{
+        transform:translate(-50%,-10px) scale(0.95);
+        opacity:.92;
+        filter:blur(.4px);
+    }
+    55%{
+        transform:translate(-50%,-16px) scale(1.1);
+        opacity:.98;
+        filter:blur(0px);
+    }
+    75%{
+        transform:translate(-50%,-12px) scale(0.95);
+        opacity:.9;
+        filter:blur(.6px);
+    }
+    100%{
+        transform:translate(-50%,0) scale(0.78);
+        opacity:.82;
+        filter:blur(0px);
+    }
 }
 
 @keyframes shine{
