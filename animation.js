@@ -3,16 +3,16 @@ const percent = document.getElementById("percent");
 const status = document.getElementById("status");
 
 const messages = [
-    "Initializing...",
-    "Loading Interface...",
-    "Preparing Posters...",
-    "Preparing Movies...",
-    "Optimizing Experience...",
-    "Launching Platform..."
+    "Đang Truy Cập...",
+    "Đang tải...",
+    "Chuẩn bị...",
+    "Preparing DATA...",
+    "Đang thiết lập giao diện...",
+    "Sắp vào web rồi ! ..."
 ];
 
 // ======= URL WEBSITE CHÍNH =======
-const TARGET_URL = "web-production-103dd.up.railway.app";
+const TARGET_URL = "https://web-production-103dd.up.railway.app";
 // ================================
 
 const TOTAL_TIME = 12000; // 12 giây
