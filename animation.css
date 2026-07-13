@@ -8,14 +8,6 @@ footer{
     animation:fadeIn 1.3s ease;
 }
 
-/* Logo */
-
-.logo-circle{
-    animation:
-    float 3s ease-in-out infinite,
-    pulse 2.2s ease-in-out infinite;
-}
-
 /* Progress */
 
 #progressBar{
