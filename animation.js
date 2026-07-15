@@ -12,7 +12,7 @@ const messages = [
 ];
 
 // ======= URL WEBSITE CHÍNH =======
-const TARGET_URL = "https://web-production-205d7.up.railway.app";
+const TARGET_URL = "https://web-production-3ff18.up.railway.app";
 // ================================
 
 const TOTAL_TIME = 12000; // 12 giây
