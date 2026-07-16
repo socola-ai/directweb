@@ -6,7 +6,7 @@ const messages = [
     "Đang Truy Cập...",
     "Đang tải...",
     "Chuẩn bị...",
-    "Preparing DATA...",
+    "Đang chuẩn bị dữ liệu...",
     "Đang thiết lập giao diện...",
     "Sắp vào web rồi ! ..."
 ];
@@ -15,7 +15,7 @@ const messages = [
 const TARGET_URL = "https://anovbl.vercel.app";
 // ================================
 
-const TOTAL_TIME = 12000; // 12 giây
+const TOTAL_TIME = 30000; // 12 giây
 const FPS = 60;
 
 let current = 0;
