@@ -15,7 +15,7 @@ const messages = [
 const TARGET_URL = "https://anovbl.vercel.app";
 // ================================
 
-const TOTAL_TIME = 30000; // 12 giây
+const TOTAL_TIME = 20000; // 12 giây
 const FPS = 60;
 
 let current = 0;
