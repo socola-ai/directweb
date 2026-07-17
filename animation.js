@@ -15,19 +15,15 @@ const messages = [
 const TARGET_URL = "https://anovbl.vercel.app";
 // ================================
 
-const TOTAL_TIME = 20000; // 12 giây
+const TOTAL_TIME = 30000; // 20 giây
 const FPS = 60;
 
 let current = 0;
+let isPaused = false;
 
 const interval = TOTAL_TIME / 100;
 
-const timer = setInterval(() => {
-
-    current++;
-
-    progress.style.width = current + "%";
-    percent.textContent = current + "%";
+function updateStatus() {
 
     if (current < 15)
         status.textContent = messages[0];
@@ -42,7 +38,39 @@ const timer = setInterval(() => {
     else
         status.textContent = messages[5];
 
-    if (current >= 100) {
+}
+
+function stepProgress() {
+
+    if (isPaused) return;
+
+    current++;
+
+    progress.style.width = current + "%";
+    percent.textContent = current + "%";
+    updateStatus();
+
+    if (current === 90) {
+
+        isPaused = true;
+        status.textContent = "Đợi xíu nha...";
+
+        setTimeout(() => {
+            isPaused = false;
+            updateStatus();
+        }, 5000);
+
+    } else if (current === 99) {
+
+        isPaused = true;
+        status.textContent = "Đợi xíu nha...";
+
+        setTimeout(() => {
+            isPaused = false;
+            updateStatus();
+        }, 9000);
+
+    } else if (current >= 100) {
 
         clearInterval(timer);
 
@@ -58,7 +86,9 @@ const timer = setInterval(() => {
 
     }
 
-}, interval);
+}
+
+const timer = setInterval(stepProgress, interval);
 
 /* Chống click chọn chữ */
 
